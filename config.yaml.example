@@ -1,11 +1,15 @@
+# 源端
 source:
   type: "sync"
-  address: "127.0.0.1:6379"
-  username: "" # keep empty if not using ACL
-  password: "" # keep empty if no authentication is required
+  address: "100.100.100.100:6379"
+  username: "" # 如果不使用 ACL，则保留为空
+  password: "bBBPHb3tpvnc" # 如果不需要身份验证，则保留为空
 
+# 目标端
 target:
   type: "standalone"
-  address: "127.0.0.1:6380"
-  username: "" # keep empty if not using ACL
-  password: "" # keep empty if no authentication is required
+  address: "127.0.0.1:6379"
+  username: "" # 如果不使用 ACL，则保留为空
+  password: "" # 如果不需要身份验证，则保留为空
+
+advanced:
